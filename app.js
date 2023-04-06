@@ -40,6 +40,9 @@ app.use('/api/v1/jobs',authorize,jobs)
 
 app.use(errorhandler)
 app.use(notFound)
+app.get('/',(req,res)=>{
+  res.send("hello world")
+})
 
 
 const start =async()=>{
